@@ -13,10 +13,18 @@ int main() {
 
   Renderer renderer(kScreenWidth, kScreenHeight, kGridWidth, kGridHeight);
   Controller controller;
+  
+  // Get input from console
+  //std::cout << "Please type in your name:";
+  
   Game game(kGridWidth, kGridHeight);
   game.Run(controller, renderer, kMsPerFrame);
   std::cout << "Game has terminated successfully!\n";
   std::cout << "Score: " << game.GetScore() << "\n";
   std::cout << "Size: " << game.GetSize() << "\n";
+  
+  // Update game result list
+  // ManageRanking
+  
   return 0;
 }
