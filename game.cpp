@@ -67,10 +67,6 @@ void Game::PlaceFood() {
   }
 }
 
-// TODO
-void Game::PlaceObstacle(){
-  int x, y;
-}
 
 void Game::Update() {
   if (!snake.alive) return;
